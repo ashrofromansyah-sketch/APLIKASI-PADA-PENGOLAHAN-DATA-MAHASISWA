@@ -1,33 +1,53 @@
-# APLIKASI-PADA-PENGOLAHAN-DATA-MAHASISWA
-ANALISIS EFISIENSI AlGORITMA ITERATIF DAN REKURSIF PADA PENGOLAHAN DATA MAHASISWA
+# Analisis Algoritma Iteratif dan Rekursif  
+## pada Pengolahan Data Mahasiswa
 
-##Deskripsi Proyek
-Proyek ini dibuat berdasarkan bagian dari "tugas besar analisis kompleksitas algoritma"
-aplikasi ini bertujuan untuk membandingkan efisiensi "algoritma iteratif dan rekursif"
-dalam pengolahan data mahasiswa, khususnay pada proses perhitungan nilai dan analisis
-waktu eksekusi algoritma
+##  Deskripsi
+Aplikasi ini dibuat untuk menganalisis dan membandingkan efisiensi algoritma **iteratif** dan **rekursif** dalam pengolahan data mahasiswa. Studi kasus yang digunakan adalah perhitungan **total nilai**, **rata-rata nilai**, dan **penentuan status kelulusan mahasiswa**.
 
-##Tujuan 
-1.Mengimplementasikan algoritma iteratif dan rekursif pada pengolahan data mahasiswa
-2.Menaganalisis kompleksitas waktu dari kedua algoritma
-3.Membandingkan performa algoritma berdasarkan running time
-4.Menentukan algoritma yang lebih efisien untuk data berukuran besar
+Aplikasi dikembangkan menggunakan bahasa pemrograman **C++** dengan dua versi:
+1. Versi **Console**
+2. Versi **GUI (Qt Widgets)**
 
-##Algoritma yang digunakan 
-1.Algoritma iteratif
--Menggunakan perulangan ('for')
--Kompleksitas waktu **O(n)**
--Lebih efisien untuk data yang berukuran besar
+---
 
-2.Algoritma rekursif
--Menggunakan pemanggilan fungsi berulang
--Kompleksitas waktu **O(n)**
--Memiliki  stack overhead rekursi
+## 🎯 Tujuan
+- Menerapkan algoritma iteratif dan rekursif pada pengolahan data mahasiswa
+- Menganalisis kompleksitas waktu dari kedua algoritma
+- Membandingkan performa algoritma berdasarkan waktu eksekusi
+- Menentukan algoritma yang lebih efisien untuk data berukuran besar
 
-##Cara menjalankan program
-1.Pastikan compiler c++ telah terinstal
-2.Masuk ke file'kode"
-3.Compile program :
+---
+
+##  Konsep Algoritma
+- **Algoritma Iteratif**  
+  Menggunakan perulangan untuk menjumlahkan data nilai mahasiswa satu per satu.
+
+- **Algoritma Rekursif**  
+  Menggunakan pemanggilan fungsi secara berulang hingga mencapai kondisi dasar (*base case*).
+
+Kedua algoritma memiliki kompleksitas waktu **O(n)**, namun algoritma iteratif lebih efisien dari sisi penggunaan memori dan waktu eksekusi.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+- Bahasa Pemrograman : C++
+- GUI Framework      : Qt Widgets
+- Compiler           : GCC / MinGW
+- IDE (opsional)     : Qt Creator, Dev-C++, Code::Blocks
+
+---
+
+## Cara Menjalankan Program
+
+###  Versi GUI (Qt)
+1. Install **Qt Creator**
+2. Buat project baru → *Qt Widgets Application*
+3. Masukkan file `.h`, `.cpp`, dan `.ui` ke project
+4. Build dan jalankan program
+
+### Versi Console
+Compile dengan perintah:
 ```bash
-g++ main.cpp -o program
+g++ main.cpp Mahasiswa.cpp -o mahasiswa
+./mahasiswa
 
